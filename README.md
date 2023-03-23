@@ -44,14 +44,16 @@ Options
     * Or, it can be automatically identified using average normal vector: $\bar{n} = \sum_i \vec{n}_i$.
 * 3. Modeling 3D surface of cleft mouth and simulating manipulation effects: how profile will be changed due to manipulation, e.g., rotation and translation.
 
+## Meetings
+
 * Mar 23, 2023.
 
-* 1. Surface interpolation may not work, since there might be situation where surface gradient may not be properly matched.
-* 2. Peak finding through large change in directions of adjacent normal vectors may not work, since ridge shape may appear like tepui (flat top).
-  * It may be able to find ledge along the ridge though.
-* Next move:
-  * Master python/blender
-  * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [(Equivalence on colab)](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
+  * 1. Surface interpolation may not work, since there might be situation where surface gradient may not be properly matched.
+  * 2. Peak finding through large change in directions of adjacent normal vectors may not work, since ridge shape may appear like tepui (flat top).
+    * It may be able to find ledge along the ridge though.
+  * Next move:
+    * Master python/blender
+    * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [(Equivalence on colab)](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
 
 * Mar 16, 2023.
 
