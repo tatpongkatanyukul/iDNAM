@@ -4,7 +4,7 @@ iDNAM Project
 ## Goal
 
 Options
-* 1. Given stl file of a cleft month profile, get the stl output for a correction cleft cast
+* 1. Given ```stl``` file of a cleft month profile, get the ```stl``` output for a correction cleft cast
 * 2. Blender plug-in automates (or semi-automates) generation of a cast profile.
 
 ## Evaluation
