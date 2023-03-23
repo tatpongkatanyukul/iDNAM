@@ -22,6 +22,7 @@ Options
   * Approach 2: Optimization: minimize rotation and translation s.t. gap distance, smooth connection, and center reference moved to mid location
     * E.g., $\min_{p, R, T} \lambda R^2 + T^2$ s.t. $d \leq 5mm$, curve matching, tolerance of a reference point to the mid location
       * $p$ is location of a pivot point, $R$ is rotation, $T$ is translation.
+      * $d$ is a gap between 2 separated palates.
       * $\lambda$ is a balancing factor.
   * Apporach 3: Mirror image, i.e., mirror the large palate on the small side.
   * Approach 4: Model with parameters tuned with previous data
