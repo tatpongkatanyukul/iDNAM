@@ -50,7 +50,7 @@ Options
   * It may be able to find ledge along the ridge though.
 * Next move:
   * Master python/blender
-  * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [Equivalence on colab](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
+  * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [(Equivalence on colab)](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
 
 * Mar 16, 2023.
 
