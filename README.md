@@ -4,8 +4,8 @@ iDNAM Project
 ## Goal
 
 Options
-* 1. จาก stl file ของ cleft month profile ทำ stl output สำหรับ cleft cast
-* 2. Blender plug-in automates (or semi-automates) cast profile.
+* 1. Given stl file of a cleft month profile, get the stl output for a correction cleft cast
+* 2. Blender plug-in automates (or semi-automates) generation of a cast profile.
 
 ## Evaluation
 * Real evaluation needs clinical trials.
@@ -14,10 +14,43 @@ Options
 ## Workflow and Approaches
 * 1. Segmentation
 * 2. Detect ridges (peaks)
+  * Options
+    * User selected landmarks
+    * Auto-detection
 * 3. Produce cast profile.
+  * Approach 1: Surface interpolation: closing cleft gap by tunnel
+  * Approach 2: Optimization: minimize rotation and translation s.t. gap distance, smooth connection, and center reference moved to mid location
+    * E.g., $\min_{p, R, T} \lambda R^2 + T^2$ s.t. $d \leq 5mm$, curve matching, tolerance of a reference point to the mid location
+      * $p$ is location of a pivot point, $R$ is rotation, $T$ is translation.
+      * $\lambda$ is a balancing factor.
+  * Apporach 3: Mirror image, i.e., mirror the large palate on the small side.
+  * Approach 4: Model with parameters tuned with previous data
+  * Approach 5: CNN to predict a cast profile directly
+    * Pro: challenge on how to meaningfully represent 3D surface data
+    * Con: require massive training data and computing power to match.
 
+## Concerns
+* 1. Computation cost from operations on massive data of mesh triangles.
+* 2. Vagueness of evaluation process.
 
+## Challenges
+* 1. Working on 3D surface with massive data of mesh triangles.
+  * Check out how Blender handles it.
+* 2. Locating dental landmarks
+  * User provides landmarks
+  * Once reference level plane is defined, peaks can be identified through  z values.
+    * Reference level plane can be provided by a user
+    * Or, it can be automatically identified using average normal vector: $\bar{n} = \sum_i \vec{n}_i$.
+* 3. Modeling 3D surface of cleft mouth and simulating manipulation effects: how profile will be changed due to manipulation, e.g., rotation and translation.
 
+* Mar 23, 2023.
+
+* 1. Surface interpolation may not work, since there might be situation where surface gradient may not be properly matched.
+* 2. Peak finding through large change in directions of adjacent normal vectors may not work, since ridge shape may appear like tepui (flat top).
+  * It may be able to find ledge along the ridge though.
+* Next move:
+  * Master python/blender
+  * Hands-on [python stl](https://colab.research.google.com/drive/#create=1&folderId=1IINhV8ZIgnSsc8iKzD9FN_38psgIQj_Z)
 
 * Mar 16, 2023.
 
