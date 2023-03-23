@@ -50,7 +50,7 @@ Options
   * It may be able to find ledge along the ridge though.
 * Next move:
   * Master python/blender
-  * Hands-on [python stl](https://colab.research.google.com/drive/#create=1&folderId=1IINhV8ZIgnSsc8iKzD9FN_38psgIQj_Z)
+  * Hands-on [python stl](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
 
 * Mar 16, 2023.
 
@@ -76,4 +76,4 @@ src https://en.wikipedia.org/wiki/STL_(file_format)
 
 ---
 
-* Try [Colab: stl](https://colab.research.google.com/drive/#create=1&folderId=1IINhV8ZIgnSsc8iKzD9FN_38psgIQj_Z)
+* Try [Colab: stl](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
