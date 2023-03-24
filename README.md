@@ -80,3 +80,5 @@ src https://en.wikipedia.org/wiki/STL_(file_format)
 ---
 
 * Try [Colab: stl](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
+
+* Check out [Tutorial on how to write a python script to control blender](https://www.youtube.com/watch?v=rHzf3Dku_cE)
