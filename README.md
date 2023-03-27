@@ -44,7 +44,11 @@ Options
     * Or, it can be automatically identified using average normal vector: $\bar{n} = \sum_i \vec{n}_i$.
 * 3. Modeling 3D surface of cleft mouth and simulating manipulation effects: how profile will be changed due to manipulation, e.g., rotation and translation.
 
-## Meetings
+## Logs
+
+* Mar 27, 2023.
+  * [Cubic spline](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.CubicSpline.html)
+  * [Bezier spline]
 
 * Mar 23, 2023.
 
