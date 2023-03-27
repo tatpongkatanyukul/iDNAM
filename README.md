@@ -48,7 +48,8 @@ Options
 
 * Mar 27, 2023.
   * [Cubic spline](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.CubicSpline.html)
-  * [Bezier spline]
+  * [Bezier spline](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
+  * [3D interpolation](https://pangeo-pyinterp.readthedocs.io/en/latest/auto_examples/ex_3d.html)
 
 * Mar 23, 2023.
 
