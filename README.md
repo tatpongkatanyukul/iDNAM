@@ -12,13 +12,19 @@ Options
 * Guideline metrics: gap width, curve matching
 
 ## Workflow and Approaches
-* 1. Segmentation
+* 1. Segmentation: greater palate and lesser palate
 * 2. Detect ridges (peaks)
   * Options
     * User selected landmarks
     * Auto-detection
 * 3. Produce cast profile.
   * Approach 1: Surface interpolation: closing cleft gap by tunnel
+    * Conventional interpolation ([colab](https://colab.research.google.com/drive/1W2Ji8KbJf5F-3c8ML_YMiUr130_L7nzw?usp=share_link))
+      * cubic spline may not work directly, since it requires interpolation ordered by $x$. 
+      * new cylindrical interpolation: spiral
+    * curve fitting
+      * parabola
+      * 3D ellipse
   * Approach 2: Optimization: minimize rotation and translation s.t. gap distance, smooth connection, and center reference moved to mid location
     * E.g., $\min_{p, R, T} \lambda R^2 + T^2$ s.t. $d \leq 5mm$, curve matching, tolerance of a reference point to the mid location
       * $p$ is location of a pivot point, $R$ is rotation, $T$ is translation.
@@ -43,15 +49,25 @@ Options
     * Reference level plane can be provided by a user
     * Or, it can be automatically identified using average normal vector: $\bar{n} = \sum_i \vec{n}_i$.
 * 3. Modeling 3D surface of cleft mouth and simulating manipulation effects: how profile will be changed due to manipulation, e.g., rotation and translation.
+* 4. Alignment issue
+  * This may be more related to comparison between intial and final states, rather than the main goal of the project.
+    * Challenge: level reference plane is difficult to defined and effect of growth makes it more difficult to compare initial and final states
+  * Caveat: X, Y, Z coordinates extracted from software may be arbitrary!
+    * Dataset 1: X: left-right, Z: back-front
+    * Dataset 2: X: front-back, Z: right-left
 
 ## Logs
+* Mar 28, 2023. Meeting.
+  * realize coordinate issue
+  * aware of alignment issue
+  * realize cons of interpolation approach
 
-* Mar 27, 2023.
+* Mar 27, 2023. Solo.
   * [Cubic spline](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.CubicSpline.html)
   * [Bezier spline](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
   * [3D interpolation](https://pangeo-pyinterp.readthedocs.io/en/latest/auto_examples/ex_3d.html)
 
-* Mar 23, 2023.
+* Mar 23, 2023. Meeting.
 
   * 1. Surface interpolation may not work, since there might be situation where surface gradient may not be properly matched.
   * 2. Peak finding through large change in directions of adjacent normal vectors may not work, since ridge shape may appear like tepui (flat top).
