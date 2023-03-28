@@ -57,10 +57,21 @@ Options
     * Dataset 2: X: front-back, Z: right-left
 
 ## Logs
+
+* Next
+  * Try pca for auto-correct level plane.
+  * alignment w/ account for growth
+    * effective growth centriod? 
+  * Spiral interpolation
+  * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
+  
 * Mar 28, 2023. Meeting.
   * realize coordinate issue
   * aware of alignment issue
   * realize cons of interpolation approach
+    * oscillation
+    * order of points
+      * spiral interpolation
 
 * Mar 27, 2023. Solo.
   * [Cubic spline](https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.CubicSpline.html)
