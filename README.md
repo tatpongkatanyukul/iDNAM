@@ -4,7 +4,7 @@ iDNAM Project
 ## Goal
 
 Options
-* 1. Given ```stl``` file of a cleft month profile, get the ```stl``` output for a correction cleft cast
+* 1. Given ```stl``` file of a cleft month profile, get the ```stl``` output for a correction NasoAlveolar molding (NAM, a cleft cast)
 * 2. Blender plug-in automates (or semi-automates) generation of a cast profile.
 
 ## Evaluation
@@ -92,6 +92,7 @@ No, Blender is not a CAD software. CAD software relies primarily on curve modeli
   * Next move:
     * Master python/blender
     * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [(Equivalence on colab)](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
+  * [presentation](https://drive.google.com/drive/folders/1-n3Pe5LuqtkHj1AnvUcZKLnidUstcMSQ)
 
 * Mar 16, 2023.
 
