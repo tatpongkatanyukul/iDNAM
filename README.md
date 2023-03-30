@@ -71,6 +71,14 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 * Mar 30, 2023.
 > "Can Blender be used as AutoCAD?
 No, Blender is not a CAD software. CAD software relies primarily on curve modeling while Blender primarily relies on polygon modeling. CAD Models are a collection of shapes defined with math while models made in Blender are collections of points connected by edges and face."
+* Working code
+  * [read and write stl file](https://colab.research.google.com/drive/1ecNpa9p7aKYWElI07wIYfy31l1-uW_39?usp=share_link)
+  * [pilot keypoints](https://colab.research.google.com/drive/1W2Ji8KbJf5F-3c8ML_YMiUr130_L7nzw?usp=share_link)
+    * Try simple interpolation
+    * Try simple curve fitting
+  * To do:
+    * 1. Keypoints: Quadratic curve fitting
+    * 2. STL: Auto-reference plane, e.g., try pca vs average normal vector
  
  
 * Mar 28, 2023. Meeting.
