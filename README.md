@@ -4,8 +4,8 @@ iDNAM Project
 ## Goal
 
 Options
-* 1. Given ```stl``` file of a cleft month profile, get the ```stl``` output for a correction NasoAlveolar molding (NAM, a cleft cast)
-* 2. Blender plug-in automates (or semi-automates) generation of a cast profile.
+* 1. Given ```stl``` file of a profile of patient's unilateral cleft lip and palate (UCLP, a cleft mouth), get the ```stl``` output for a correction NasoAlveolar molding (NAM, a cleft cast)
+* 2. Blender plug-in automates (or semi-automates) generation of a cast profile for NAM.
 
 ## Evaluation
 * Real evaluation needs clinical trials.
