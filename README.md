@@ -29,6 +29,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
       * 3D ellipse
   * Approach 2: Optimization: minimize rotation and translation s.t. gap distance, smooth connection, and center reference moved to mid location
     * E.g., $\min_{p, R, T} \lambda R^2 + T^2$ s.t. $d \leq 5mm$, curve matching, tolerance of a reference point to the mid location
+    * See page 62 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10M-K6IoRaUhvc9x9v-bFmzyEW4NTkAKx/view?usp=share_link)
       * $p$ is location of a pivot point, $R$ is rotation, $T$ is translation.
       * $d$ is a gap between 2 separated palates.
       * $\lambda$ is a balancing factor.
