@@ -79,7 +79,13 @@ No, Blender is not a CAD software. CAD software relies primarily on curve modeli
   * To do:
     * 1. Keypoints: Quadratic curve fitting
     * 2. STL: Auto-reference plane, e.g., try pca vs average normal vector
- 
+      * 2.1. Get reference plane
+      * 2.2. Auto-identify keypoints and Alveolar ridge (Talk to Aj Nawapak)
+      
+  * To learn:
+    * 1. Efficient manipulation of triangluar mesh
+    * 2. Blender and Blender coding
+    
  
 * Mar 28, 2023. Meeting.
   * realize coordinate issue
