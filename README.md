@@ -7,6 +7,8 @@ Options
 * 1. Given ```stl``` file of a profile of patient's unilateral cleft lip and palate (UCLP, a cleft mouth), get the ```stl``` output for a correction NasoAlveolar molding (NAM, a cleft cast)
 * 2. Blender plug-in automates (or semi-automates) generation of a cast profile for NAM.
 
+See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10M-K6IoRaUhvc9x9v-bFmzyEW4NTkAKx/view?usp=share_link) 
+
 ## Evaluation
 * Real evaluation needs clinical trials.
 * Guideline metrics: gap width, curve matching
