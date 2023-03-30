@@ -92,7 +92,7 @@ No, Blender is not a CAD software. CAD software relies primarily on curve modeli
   * Next move:
     * Master python/blender
     * [Hands-on python stl](https://github.com/tatpongkatanyukul/iDNAM/blob/main/HandsOn/readme.md) [(Equivalence on colab)](https://colab.research.google.com/drive/1Zv78AlXZGzV7_9aVnF3CCSOHrSZ4tOia)
-  * [presentation](https://drive.google.com/drive/folders/1-n3Pe5LuqtkHj1AnvUcZKLnidUstcMSQ)
+  * [presentation](https://drive.google.com/file/d/10M-K6IoRaUhvc9x9v-bFmzyEW4NTkAKx/view?usp=share_link)
 
 * Mar 16, 2023.
 
