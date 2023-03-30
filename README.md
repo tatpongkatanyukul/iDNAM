@@ -64,10 +64,16 @@ Options
     * effective growth centriod? 
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
-  
+
+* Mar 30, 2023.
+> "Can Blender be used as AutoCAD?
+No, Blender is not a CAD software. CAD software relies primarily on curve modeling while Blender primarily relies on polygon modeling. CAD Models are a collection of shapes defined with math while models made in Blender are collections of points connected by edges and face."
+ 
+ 
 * Mar 28, 2023. Meeting.
   * realize coordinate issue
   * aware of alignment issue
+    * This matters when we want to compare before and after the NAM treatment.
   * realize cons of interpolation approach
     * oscillation
     * order of points
