@@ -73,7 +73,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     * Idea!
       * Mirror: mirror plane with minimization of difference in normal vectors around mirror boundary: 
       
-      $$\min_{\hat{m}$ \sum_i (\hat{n}_i - \hat{n}'_i)^2$$ 
+      $$min_{\hat{m}$ \sum_i (\hat{n}_i - \hat{n}'_i)^2$$ 
       
       where $\hat{m}$ is a normal vector of a mirror plane.
       * This $\hat{m}$ can be initialized with $\vec{m}_0 = \vec{t'} - \vec{t}$ at its midpoint: $\vec{t'} + \vec{m}_0/2$.
