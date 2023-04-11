@@ -63,10 +63,17 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ## Logs
 
 * Next
+  * Mirror approach
+    * python + blender to mirror
+    * Have python mirror stl mesh triangles.
+    * Put 3D points onto mesh surface.
+  * Affine transformation approach 
   * alignment w/ account for growth
     * effective growth centriod? 
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
+
+
 
 * Apr 11
   * Discuss with Aj Nawapak and Aj Wasu
