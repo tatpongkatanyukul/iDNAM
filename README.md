@@ -63,12 +63,24 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ## Logs
 
 * Next
-  * Try pca for auto-correct level plane.
   * alignment w/ account for growth
     * effective growth centriod? 
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
 
+* Apr 11
+  * Discuss with Aj Nawapak and Aj Wasu
+    * Idea!
+      * Mirror: mirror plane with minimization of difference in normal vectors around mirror boundary: $\min_{\hat{m}$ \sum_i (\hat{n}_i - \hat{n}'_i)^2$ where $\hat{m}$ is a normal vector of a mirror plane.
+      * This $\hat{m}$ can be initialized with $\vec{m}_0 = \vec{t'} - \vec{t}$ at its midpoint: $\vec{t'} + \vec{m}_0/2$.
+        * The discrepancy between $\vec{t'}$ and $\vec{t}$ can be corrected through optimization.
+      * This idea can be extended to find a level XY plane: XY plane the can mirror such that the reflection normal vectors are most complement to the original normal vectors.
+        * $\hat{n} - \hat{n'} \approx 0$, is it?
+  * Next
+    * Mirror approach
+    * Affine transformation approach
+
+  
 * Mar 30, 2023.
 > "Can Blender be used as AutoCAD?
 No, Blender is not a CAD software. CAD software relies primarily on curve modeling while Blender primarily relies on polygon modeling. CAD Models are a collection of shapes defined with math while models made in Blender are collections of points connected by edges and face."
@@ -76,8 +88,14 @@ No, Blender is not a CAD software. CAD software relies primarily on curve modeli
   * [read and write stl file](https://colab.research.google.com/drive/1ecNpa9p7aKYWElI07wIYfy31l1-uW_39?usp=share_link)
   * [pilot keypoints](https://colab.research.google.com/drive/1W2Ji8KbJf5F-3c8ML_YMiUr130_L7nzw?usp=share_link)
     * Try simple interpolation
+      * Naive version does not work. The order issue.
     * [Try simple curve fitting](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T)
-  * To do:
+      * Naive version does not seem to be what we want.
+    * [Try pca for auto-correct level plane.](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T)
+      * Naive application of PCA does not seem to be beneficial!
+
+
+* To do:
     * 1. Keypoints: [Quadratic curve fitting](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T) Done! Apr 11. Not quite what we want.
     * 2. STL: Auto-reference plane, e.g., try pca vs average normal vector
       * 2.1. Get reference plane
