@@ -76,9 +76,9 @@ No, Blender is not a CAD software. CAD software relies primarily on curve modeli
   * [read and write stl file](https://colab.research.google.com/drive/1ecNpa9p7aKYWElI07wIYfy31l1-uW_39?usp=share_link)
   * [pilot keypoints](https://colab.research.google.com/drive/1W2Ji8KbJf5F-3c8ML_YMiUr130_L7nzw?usp=share_link)
     * Try simple interpolation
-    * Try simple curve fitting
+    * [Try simple curve fitting](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T)
   * To do:
-    * 1. Keypoints: Quadratic curve fitting
+    * 1. Keypoints: [Quadratic curve fitting](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T) Done! Apr 11. Not quite what we want.
     * 2. STL: Auto-reference plane, e.g., try pca vs average normal vector
       * 2.1. Get reference plane
       * 2.2. Auto-identify keypoints and Alveolar ridge (Talk to Aj Nawapak)
