@@ -25,7 +25,8 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
       * cubic spline may not work directly, since it requires interpolation ordered by $x$. 
       * new cylindrical interpolation: spiral
     * curve fitting
-      * parabola
+      * [parabola](https://colab.research.google.com/drive/1osVF3ibuDZ3rS6RisX4XpqwxKdHy31zq#scrollTo=ebFEQH7LBq3T)
+        * It does not seem to work! (Apr 11th)
       * 3D ellipse
   * Approach 2: Optimization: minimize rotation and translation s.t. gap distance, smooth connection, and center reference moved to mid location
     * E.g., $\min_{p, R, T} \lambda R^2 + T^2$ s.t. $d \leq 5mm$, curve matching, tolerance of a reference point to the mid location
