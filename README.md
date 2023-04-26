@@ -73,7 +73,13 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
 
-
+* Apr 26
+  * Learn Blender
+    * Reduce mesh resolution
+      * ```edit mode```
+	     * > ```select``` > ```all```
+	     * > ```mesh``` > ```clean up``` > ```decimate geometry```
+	     * > On pop-up panel: set ```ratio```, e.g., 0.1
 
 * Apr 11
   * Discuss with Aj Nawapak and Aj Wasu
