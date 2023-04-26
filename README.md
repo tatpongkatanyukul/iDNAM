@@ -80,6 +80,9 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 	     * > ```select``` > ```all```
 	     * > ```mesh``` > ```clean up``` > ```decimate geometry```
 	     * > On pop-up panel: set ```ratio```, e.g., 0.1
+    * Separate objects
+      * [Seperate](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/separate.html): 'P'
+
 
 * Apr 11
   * Discuss with Aj Nawapak and Aj Wasu
