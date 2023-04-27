@@ -75,6 +75,8 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 
 * Apr 27
   * [Global vs Local](https://blenderartists.org/t/global-vs-local-coordinate/354788)
+  * Watch Blender Fundamentals 2.8
+    * Next: (4th) Select & Transform 
 
 * Apr 26
   * Learn Blender
