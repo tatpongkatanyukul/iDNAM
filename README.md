@@ -78,6 +78,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * Watch Blender Fundamentals 2.8
     * Next: (4th) Select & Transform 
   * Make Blender as a python module: https://wiki.blender.org/wiki/Building_Blender/Other/BlenderAsPyModule
+  * Run script outside Blender UI: https://docs.blender.org/api/current/info_tips_and_tricks.html#use-an-external-editor
 
 * Apr 26
   * Learn Blender
