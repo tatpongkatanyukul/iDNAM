@@ -75,6 +75,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 
 * Apr 28
   * Add 'constraint' > 'shrinkwrap' on surface > target = 'nasolabial_scan'
+  * See python console result, e.g., ```print``` by ```Window``` > ```Toggle System Console```
 
 * Apr 27
   * [Global vs Local](https://blenderartists.org/t/global-vs-local-coordinate/354788)
