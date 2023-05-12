@@ -73,6 +73,11 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
 
+* May 12
+  * [Compute](https://colab.research.google.com/drive/1NMjkwJhOX0p9Xu_oBTSK8bTI_NLSLvLL#scrollTo=dXitJ_slk4Dk)
+  * Learn Blender
+
+
 * May 1
   * Python Blender API: https://docs.blender.org/api/blender_python_api_master/
 
