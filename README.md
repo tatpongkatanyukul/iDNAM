@@ -60,6 +60,15 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     * Dataset 1: X: left-right, Z: back-front
     * Dataset 2: X: front-back, Z: right-left
 
+---
+## Python - Blender
+
+* [API](https://wiki.blender.org/wiki/Reference/Release_Notes/3.4/Python_API)
+* Objects ```objs = bpy.data.collections['Collection'].objects```
+  * E.g., ```bpy.data.collections['Collection'].objects['Nasolabial_scan']``` 
+
+
+---
 ## Logs
 
 * Next
