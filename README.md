@@ -66,7 +66,11 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 * [API](https://wiki.blender.org/wiki/Reference/Release_Notes/3.4/Python_API)
 * Objects ```objs = bpy.data.collections['Collection'].objects```
   * E.g., ```o = bpy.data.collections['Collection'].objects['Nasolabial_scan']``` and ```m = o.to_mesh()```
-
+  * [Mesh](https://docs.blender.org/api/current/bpy.types.Mesh.html)
+    * [```vertices```]
+    * [```edges```]
+    * [```loops```]
+    * [```polygons```]
 ---
 ## Logs
 
