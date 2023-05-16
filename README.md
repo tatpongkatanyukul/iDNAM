@@ -68,6 +68,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * E.g., ```o = bpy.data.collections['Collection'].objects['Nasolabial_scan']``` and ```m = o.to_mesh()```
   * [Mesh](https://docs.blender.org/api/current/bpy.types.Mesh.html)
     * [```vertices```]
+      * E.g., ```m.vertices[84451].co``` 
     * [```edges```]
     * [```loops```]
     * [```polygons```]
