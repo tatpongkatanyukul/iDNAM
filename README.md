@@ -79,6 +79,8 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     * "Copy into one of the directories ```scripts/startup```, where they will be automatically imported on startup."
     * "Define as an add-on, enabling the add-on will load it as a Python module."
 * "... add-ons which are kept in their own directory ```scripts/addons```, They are only loaded on startup if selected from the user preferences."
+  * See [Add-ons](https://docs.blender.org/api/current/info_overview.html) 
+  * See [Wiki Blender: Add-Ons](https://wiki.blender.org/wiki/Process/Addons/Guidelines)
 
 ---
 ## Logs
