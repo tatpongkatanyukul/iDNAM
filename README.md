@@ -91,6 +91,14 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     * https://web.cs.wpi.edu/~matt/courses/cs563/talks/nurbs.html
     * https://web.mit.edu/hyperbook/Patrikalakis-Maekawa-Cho/node20.html  
 
+  * API Overview: https://docs.blender.org/api/current/info_overview.html
+```
+import bpy
+bpy.data.objects["Cube"].data.vertices[0].co.x += 1.0
+```
+
+
+
 * May 12
   * [Compute](https://colab.research.google.com/drive/1NMjkwJhOX0p9Xu_oBTSK8bTI_NLSLvLL#scrollTo=dXitJ_slk4Dk)
   * Learn Blender (Modeling)
