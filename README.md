@@ -75,6 +75,9 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 
 * "On startup Blender scans the ```scripts/startup/``` directory for Python modules and imports them." (See [API Overview](https://docs.blender.org/api/current/info_overview.html))
   * E.g., ```C:\Program Files\Blender Foundation\Blender 3.4\3.4\scripts\startup``` 
+  * "To run as modules:"
+    * "Copy into one of the directories ```scripts/startup```, where they will be automatically imported on startup."
+    * "Define as an add-on, enabling the add-on will load it as a Python module."
 
 ---
 ## Logs
