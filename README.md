@@ -72,6 +72,10 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     * [```edges```]
     * [```loops```]
     * [```polygons```]
+
+* "On startup Blender scans the ```scripts/startup/``` directory for Python modules and imports them." (See [API Overview](https://docs.blender.org/api/current/info_overview.html))
+  * E.g., ```C:\Program Files\Blender Foundation\Blender 3.4\3.4\scripts\startup``` 
+
 ---
 ## Logs
 
