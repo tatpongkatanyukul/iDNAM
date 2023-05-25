@@ -20,6 +20,6 @@ $$N_{i,0}(u) = \begin{cases}
 
 $$N_{i,p}(u) = \frac{u-u_i}{u_{i+p} - u_i} N_{i,p-1}(u) + \frac{u_{i+p+1}-u}{u_{i+p+1} - u_{i+1}} N_{i+1,p-1}(u)$$
 
-where $u_i$ are the knots, forming a knot vector $U = \{ u_0, u_1, \ldots, u_m \}$
+where $u_i$ are the knots, forming a knot vector $U = [ u_0, u_1, \ldots, u_m ]^T$
 
 ---
