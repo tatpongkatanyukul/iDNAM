@@ -92,7 +92,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 
 * Context
   * "The context is always available from ```bpy.context``` and can be used to get the active object, scene, tool settings along with many other attributes." 
-  * E.g., ```bpy.context.active_object```
+  * E.g., ```bpy.context.active_object```, ```bpy.context.selected_objects```
 
 ---
 ## Logs
