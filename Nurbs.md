@@ -13,6 +13,9 @@ where
 * $P_i$ are the control points,
 * $N_{i,p}(u)$ are the normalized B-spline basis functions of degree $p$ defined as
 
-$$N_{i,0}(u) = $$
+$$N_{i,0}(u) = \begin{cases}
+    1, & \text{if } u_i \leq u < u_{i+1} \\
+    0, & \text{otherwise}
+\end{cases}$$
 
 ---
