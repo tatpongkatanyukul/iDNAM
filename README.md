@@ -89,6 +89,10 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
     *  ```bpy.data.meshes[0].vertices[0].co.x = 3```
     *  ```bpy.data.objects[1].to_mesh().vertices[0].co```
     * Notice how coordinate in ```object[1]``` has changed according to ```meshes[0]```.
+
+* Context
+  * "The context is always available from ```bpy.context``` and can be used to get the active object, scene, tool settings along with many other attributes." 
+
 ---
 ## Logs
 
