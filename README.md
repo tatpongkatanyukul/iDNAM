@@ -82,6 +82,13 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * See [Add-ons](https://docs.blender.org/api/current/info_overview.html) 
   * See [Wiki Blender: Add-Ons](https://wiki.blender.org/wiki/Process/Addons/Guidelines)
 
+* Object vs Mesh
+  * ```bpy.data.objects[1].to_mesh()```  links to ```bpy.data.meshes[0]```
+    * E.g., try the following.
+    *  ```bpy.data.objects[1].to_mesh().vertices[0].co```
+    *  ```bpy.data.meshes[0].vertices[0].co.x = 3```
+    *  ```bpy.data.objects[1].to_mesh().vertices[0].co```
+    * Notice how coordinate in ```object[1]``` has changed according to ```meshes[0]```.
 ---
 ## Logs
 
