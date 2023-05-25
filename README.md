@@ -108,6 +108,9 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
   * Spiral interpolation
   * Divided interpolation: left (x=back-front); right (x=back-front); front (connection points on the front, x=left-right)
 
+* May 25
+  * [Nurbs](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Nurbs.md)
+
 * May 22
   * Nurbs
     * https://web.cs.wpi.edu/~matt/courses/cs563/talks/nurbs.html
