@@ -1,5 +1,8 @@
 # NURBS
 
+Non-Uniform Rational B-Splines
+
+
 ---
 
 Les Piegl, On NURBS: A Survey
