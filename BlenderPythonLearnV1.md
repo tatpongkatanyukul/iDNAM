@@ -21,3 +21,7 @@
 ---
 
 # Interesting code
+
+Code examples
+* [Aj Wasu's dp2.py with my addition](https://github.com/tatpongkatanyukul/iDNAM/blob/main/dp2_wasu230531_PlusTKv1.py)\
+* [Aj Wasu's color.py for visualizing ridge finding](https://github.com/tatpongkatanyukul/iDNAM/blob/main/color.py)
