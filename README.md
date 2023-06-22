@@ -97,6 +97,10 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ---
 ## Logs
 
+* Jun 22
+  * [Blender: fill-holes example](https://github.com/tatpongkatanyukul/iDNAM/raw/main/FillHolesV1.blend)
+  * [Fill-holes code](https://github.com/tatpongkatanyukul/iDNAM/raw/main/FillByEdgeClustersV2.py)
+
 * Jun 21
   * Constraint: ("E:\2023\Research\iDNAM\Cleft\code\dp2_wasu230531_PlusConstraintV1.py")
   * Fill holes: "E:\2023\Research\iDNAM\holes2.blend" ("E:\2023\Research\iDNAM\Cleft\code\FillByEdgeClustersV2.py")
