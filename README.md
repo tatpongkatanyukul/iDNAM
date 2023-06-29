@@ -108,6 +108,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
       * [```bmesh.ops.holes_fill(bm, edges, sides)```](https://docs.blender.org/api/3.4/bmesh.ops.html) (Must have a **correct order** of edges)
       * [```bmesh.types.BMFaceSeq.new(verts, example=None)```](https://docs.blender.org/api/3.4/bmesh.types.html#bmesh.types.BMFaceSeq) (Must have a **correct order** of vertices)
       * Be cautious for figure-8 holes!
+        * This may be addressed using edge/vertex traversing (but layer-forming edge may cause trouble).
       * Edge associating with 1 face forms boundary.
       * Edge associating with 2 faces forms layer-like surface.
 
