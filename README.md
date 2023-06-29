@@ -97,6 +97,17 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ---
 ## Logs
 
+
+
+* Jun 28
+  * Found the out-of-order issue: edges are not arranged in the proper order regarding boundaries they form
+    * Hence groups of edges are quite fragmented and alone cannot sufficiently define holes.  
+  * Aj Wasu's comments
+      * ```bmesh.types.BMEdge.is_boundary``` (```bpy.types.MeshEdge``` does not have ```.is_boundary```)
+      * ```bmesh.types.BMEdge.link_faces```
+      * [```bmesh.ops.holes_fill(bm, edges, sides)```](https://docs.blender.org/api/3.4/bmesh.ops.html) (Must have a **correct order** of edges)
+      * [```bmesh.types.BMFaceSeq.new(verts, example=None)```](https://docs.blender.org/api/3.4/bmesh.types.html#bmesh.types.BMFaceSeq) (Must have a **correct order** of vertices)
+
 * Jun 22
   * [Blender: fill-holes example](https://github.com/tatpongkatanyukul/iDNAM/raw/main/FillHolesV1.blend)
   * [Fill-holes code](https://github.com/tatpongkatanyukul/iDNAM/raw/main/FillByEdgeClustersV2.py)
