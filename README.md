@@ -98,7 +98,7 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ## Logs
 
 * July 1
-  * Fill holes 
+  * [Fill holes](https://github.com/tatpongkatanyukul/iDNAM/blob/main/FillHole.md)
 
 
 * Jun 28
