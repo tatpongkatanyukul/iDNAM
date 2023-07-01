@@ -99,8 +99,9 @@ def select_edges(edges, target="PLATE"):
 This works badly.
 It may be the hole filling algorithm itself that I have to work on.
 
-Ideas:
+Ideas/To Do's:
 * Do surface interpolation. Then fill the edges and vertices of the interpolated area.
+* Aj Wasu suggests: ```bmesh.ops.holes_fill(bm, edges, sides)```
 
 ```    
 def fill_hole(target="PLATE"):
