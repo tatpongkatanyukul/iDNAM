@@ -97,6 +97,13 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 ---
 ## Logs
 
+* July 7
+  * Ridge finding with parabola
+    * [version 1](https://github.com/tatpongkatanyukul/iDNAM/blob/main/TKRidgeV1_color.py)
+    * [correction ](https://github.com/tatpongkatanyukul/iDNAM/blob/main/TKRidgeV1.1_color.py)
+    * Tricks
+
+
 * July 1
   * [Fill holes](https://github.com/tatpongkatanyukul/iDNAM/blob/main/FillHole.md)
 
