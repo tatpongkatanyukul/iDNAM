@@ -100,9 +100,13 @@ See pages 45-46 of [iDNAME AI Project 031523](https://drive.google.com/file/d/10
 * July 7
   * Ridge finding with parabola
     * [version 1](https://github.com/tatpongkatanyukul/iDNAM/blob/main/TKRidgeV1_color.py)
-    * [correction ](https://github.com/tatpongkatanyukul/iDNAM/blob/main/TKRidgeV1.1_color.py)
-    * Tricks
-
+      * [correction ](https://github.com/tatpongkatanyukul/iDNAM/blob/main/TKRidgeV1.1_color.py)
+      * issues:
+        * 1. Selection of threshold ```tau``` in  ```ridge_morphogen```: idea: mitigation usings clustering
+        * 2. Choice of the model: version 1 (and its correction) using parabolar; ellipse and nurbs seem to be more promising.
+  * On hold
+    * [Fill holes](https://github.com/tatpongkatanyukul/iDNAM/blob/main/FillHole.md)
+    * Constraint: on-surface restriction
 
 * July 1
   * [Fill holes](https://github.com/tatpongkatanyukul/iDNAM/blob/main/FillHole.md)
