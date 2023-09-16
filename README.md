@@ -12,7 +12,7 @@
 Two main tasks
 * 1. Finding edges
   * Option 1.1. **Self-organizing map**
-  * Option 1.2. Features ($z$, $\vec{n}$, $\Delta \vec{n}$ and ANN
+  * Option 1.2. Features ($z$, $\vec{n}$, $\Delta \vec{n}$) and ANN
   * Option 1.3. Surface CNN
 
 * 2. Bridging gap
