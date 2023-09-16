@@ -16,11 +16,18 @@ Two main tasks
   * Option 1.3. Surface CNN
 
 * 2. Bridging gap
-  * Option 2.1. NURBS: maximization of ridge continuity: grad and momentum (or Jacobian)
+  * Option 2.1. **NURBS: maximization of ridge continuity: grad and momentum (or Jacobian)**
   * Option 2.2. Patient's palates: minimization of rotation and translation   
  
 * 3. Assessing results
   * I am thinking out having results from multiple approaches and have experts (K. June, Aj Cartoon) blindly grade the results.
   * Check out Bleu score for reference
+ 
+All of all, I'll go with NURBS first!
 ---
 # Log
+
+To do: understand NURBS
+
+* Sep 20
+  * ?read NURBS 
