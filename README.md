@@ -29,5 +29,27 @@ All of all, I'll go with NURBS first!
 
 To do: understand NURBS
 
+* Oct 13
+
+I am able to import module in python/blender
+
+```
+import os
+import bpy
+import sys
+sys.path.append("E:\\2023\\Research\\iDNAM\\230706")
+
+
+print('cwd=', os.getcwd())
+print('bpy.data.filepath=', bpy.data.filepath)
+
+old_cwd = os.getcwd()
+os.chdir("E:\\2023\\Research\\iDNAM\\230706")
+print('cwd=', os.getcwd())
+
+from myutils import test
+print('test=', test(5))
+```
+
 * Sep 20
   * ?read NURBS 
