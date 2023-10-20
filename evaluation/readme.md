@@ -48,10 +48,10 @@ Note: some other utility tasks
   * Aveleolar-Ridge Score (ARS)
     * joint meet projection / joint sharpness (matching curve)
     * gap size
-  * initial ARS: score of the initial aveleolar ridge of a patient: how good/bad the patient's ridge is.
+  * initial ARS: score of the initial alveolar ridge of a patient: how good/bad the patient's ridge is.
   * final ARS: score of the final ridge: how good the ridge is after the treatment.
 
-  * Subject of evaluation is the patient's aveleolar ridge
+  * Subject of evaluation is the patient's alveolar ridge
     * near an oral 3D scan  
  
  
