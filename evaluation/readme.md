@@ -24,7 +24,9 @@ We may need to separate the evaluation of different types of NAMs
           * $|A_g - A_l| leq D$
         * Projected ridge curves are well matched.
           * curve eq. of greater segment $f_g'(A_g) = b'(A_g)$ and $f_l'(A_l) = b'(A_l)$                  
-          * $b$ is a bridge eq.: $b''(a \in [A_g, A_l]) =$ constant.    
+          * $b$ is a bridge eq.: $b''(a \in [A_g, A_l]) =$ constant.
+          * Ridge curve can be fitted from ridge faces.
+            * Ridge faces can be identified by $\vec{n}_i \cdot \hat{z} > \tau$ where $\vec{n}_i$ is a normal vector of the face and $\hat{z}$ is a unit vector of z direction.
       * The designated area has to be specified for what conditions, e.g., clearance about 0.15 mm over some area or may be over 5mm-10mm over another area.
      
       The fitness score $f$ depends on the clearance (between NAM surface and the patient ridge, corresponding z-location) $c = Z_N - Z_P$
