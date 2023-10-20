@@ -36,6 +36,10 @@ We may need to separate the evaluation of different types of NAMs
       * Example of $f$ formulation
      
         $f = e^{-\sum( (Z_N - Z_P - 0.15)^2 )}$
+
+Note: some other utility tasks
+* Automatically find axes.
+* Automatically align NAM to patient's ridge
     
 ---
 
