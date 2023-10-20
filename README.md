@@ -29,6 +29,9 @@ All of all, I'll go with NURBS first!
 
 To do: understand NURBS
 
+* Oct 20
+  * [Evaluation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/evaluation/readme.md)
+
 * Oct 13
 
 I am able to import module in python/blender
