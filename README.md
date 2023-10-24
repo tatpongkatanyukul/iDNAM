@@ -23,11 +23,17 @@ Two main tasks
   * I am thinking out having results from multiple approaches and have experts (K. June, Aj Cartoon) blindly grade the results.
   * Check out Bleu score for reference
  
-All of all, I'll go with NURBS first!
+---
+# On hold
+
+* [Morphogen 2D](https://colab.research.google.com/drive/1mT8QNi-vt6rmBi1QrWxQwdN2B582q4tZ#scrollTo=C0mdgvfGO0cL)
+
 ---
 # Log
 
-To do: understand NURBS
+* Oct 24
+  * [Elliptic curve](https://colab.research.google.com/drive/1aP1Wb8wCztPs2EYsz0TKfGTFdNxUhtvR#scrollTo=uzLR4OOt1jFU)
+
 
 * Oct 20
   * [Evaluation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/evaluation/readme.md)
