@@ -36,6 +36,11 @@ Two main tasks
 
 * Oct 24
   * [Elliptic curve](https://colab.research.google.com/drive/1aP1Wb8wCztPs2EYsz0TKfGTFdNxUhtvR#scrollTo=uzLR4OOt1jFU)
+    Next:
+    * Add it to Blender
+    * Find the ridge
+    * Fit ellipse to the ridge
+    * Make NAM surface using Gaussian mixture model 
 
 
 * Oct 20
