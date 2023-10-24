@@ -26,7 +26,10 @@ Two main tasks
 ---
 # On hold
 
-* [Morphogen 2D](https://colab.research.google.com/drive/1mT8QNi-vt6rmBi1QrWxQwdN2B582q4tZ#scrollTo=C0mdgvfGO0cL)
+* [Morphogen 2D](https://colab.research.google.com/drive/1mT8QNi-vt6rmBi1QrWxQwdN2B582q4tZ#scrollTo=C0mdgvfGO0cL) (On hold 2023 Oct 24)
+  * It (```polymorph``` and ```polymorph_coeff```) is not right!
+    * reflective criterion is not met.
+    * continuous secretion criterion is not met either.
 
 ---
 # Log
