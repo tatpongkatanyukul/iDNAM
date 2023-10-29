@@ -31,6 +31,8 @@ Two main tasks
     * reflective criterion is not met.
     * continuous secretion criterion is not met either.
 
+* [Shape regression](https://colab.research.google.com/drive/1shFRNxwB2SVL8DPYXnpWWhgsHPg0WOnZ#scrollTo=yhaNKMWV8lrd)
+
 ---
 # Log
 
