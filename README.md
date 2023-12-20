@@ -1,6 +1,12 @@
 # iDNAM
 
 * [OLD Log 2023](https://github.com/tatpongkatanyukul/iDNAM/blob/main/OLDLog2023.md)
+
+# Papers
+
+* 2023: ITTA, Baku Azerbaijan
+* 2024: Uzbekistan? https://icisca.newuu.uz/ or computational science?
+
 ---
 # My strategy
 * Since Aj Wasu covers the main and essential part, I am quite free to explore anything I wish.
