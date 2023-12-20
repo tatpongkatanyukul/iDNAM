@@ -4,7 +4,7 @@
 
 # Papers
 
-* 2023: ITTA, Baku Azerbaijan
+* 2023: ITTA, Baku Azerbaijan?
 * 2024: Uzbekistan? https://icisca.newuu.uz/ or computational science?
 
 ---
