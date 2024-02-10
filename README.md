@@ -42,6 +42,9 @@ Two main tasks
 ---
 # Log
 
+* 2024 Feb 10
+  * [Phase 1](https://drive.google.com/drive/folders/13EcyENB7C4cwWotuD_PyRjYlV1-YZG6h?usp=drive_link) 
+
 * Oct 24
   * [Elliptic curve](https://colab.research.google.com/drive/1aP1Wb8wCztPs2EYsz0TKfGTFdNxUhtvR#scrollTo=uzLR4OOt1jFU)
     Next:
