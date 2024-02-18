@@ -69,8 +69,14 @@ Fields:
 
 ---
 
+## Starting
+![Steps](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Steps.png)
+
+
+
+
 ## Step 5
-![Starting](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
+![Set keypoints](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
 
 ## Step 6
 ![Ridge identification result](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Ridge.png)
