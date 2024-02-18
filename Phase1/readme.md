@@ -1,12 +1,12 @@
 # Features
 1. From IOS to a bridge model, it requires only key-point identification.
-2. Allow on-the-fly adjustment of marked ridge area.
+2. It allows on-the-fly adjustment of marked ridge area.
    It can be done through material index. Though it may not be easy.
-3. Allow on-the-fly adjustment of cross-section outline.
+3. It allows on-the-fly adjustment of cross-section outline.
    It can be done in ```Edit``` mode. This is not so difficult.
 * Although it is possible to adjust a shape model, I am not feeling comfortable recommending it.
 * Of course, the final bridge model can also be modified.
-4. All setting parameters are accessed through json: ```conf.json```.
+4. All setting parameters are accessible through json: ```conf.json```.
 
 # To do
 1. Snap keypoints, e.g., C, T, T' to the surface for ease of handling.
