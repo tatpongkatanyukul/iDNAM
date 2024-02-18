@@ -69,7 +69,7 @@ Fields:
 
 ---
 
-![Starting](Phase1/IOS.png)
+![Starting](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
 
 ---
 
