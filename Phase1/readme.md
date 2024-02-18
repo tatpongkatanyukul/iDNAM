@@ -7,6 +7,7 @@
 * Although it is possible to adjust a shape model, I am not feeling comfortable recommending it.
 * Of course, the final bridge model can also be modified.
 4. All setting parameters are accessible through json: ```conf.json```.
+5. Names of all key points are adjustible in a single point, ```AutoBridgeV2.py```
 
 # To do
 1. Snap keypoints, e.g., C, T, T' to the surface for ease of handling.
