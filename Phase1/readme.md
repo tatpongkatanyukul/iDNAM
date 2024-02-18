@@ -11,6 +11,8 @@
 3. Auto de-corner the section corners.
 4. Easy set-up facility for setting up scipy to Blender-Python.
 
+---
+
 # Usage
 * Requirement
   * Have ```scipy``` installed for Blender-Python
@@ -24,7 +26,36 @@
 2. Click ```Run script``` (Alt P, in windows)
 3. In ```3D Viewport```, there will be side tab ```Dental Workflow```.
 4. Follow steps in the workflow. 
- 
+
+# Configuration
+
+The configuration file ```conf.json```, specified in ```AutoBridgeV2.py``` (i.e., ```cfg='conf.json'```)
+
+Fields:
+* ```"log"```: ```"log.txt"```. A log filename, without path. The path is automatically set to the working path, where the ```AutoBridgeV2.py``` is.
+* ```"save_context"```: ```true```. Whether to save the context, e.g., faces and keypoints, for further investigation.
+* ```"faces_file"```: ```"faces.npy"```. Filename of the saved faces (IOS polygons).
+* ```"kp_file"```: ```"kp.pkl"```. Filename of the saved keypoints: user-specified keypoints.
+* ```"ridge"```: ```{"criteria": "zmax", "tau": 0.0, "show": true, "materials": {"ridge": [1,0,0,1], "non-ridge": [0.5,0.5,0.5,1]}}```. Ridge identification hyperparameters.
+  * ```criteria``` options
+    * ```"zmax"```: ridge is any face whose center $z \geq \tau z_\max$,
+      where $z_\max$ is the maximal $z$ and $\tau$ is specified by ```"tau"```.
+    * ```"z >= 0"``` (or anything, but ```"zmax"```): ridge is any face whose center $z \geq 0$.
+ "shape": {"fit": "SP.Y0", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]},
+ "shape_collection": "Bridge",
+ "shape_save": "shape.pkl", 
+     "cross_sect_angles": {"mode": "keys", "key1": "T1'", "key2": "C1",
+                       "omode": "fixed", "phi1": 0, "phi2": 2.8},
+     "cross_sect_reso": 40,
+ "cross_sect": {"angle_keys": ["T1'", "C1"], "radial_bounds": ["RI", "RO"], 
+                "radial_mode": "Z", "resolution": 40},
+ "cross_sect_collection": "Bridge",
+ "cross_sect_save": "xsect.pkl"
+}
+```
+
+---
+
 # Next
 * Evaluation.
 * Phase 2: make it a print-ready plate.
