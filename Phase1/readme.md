@@ -42,23 +42,30 @@ Fields:
       where $z_\max$ is the maximal $z$ and $\tau$ is specified by ```"tau"```.
     * ```"z >= 0"``` (or anything, but ```"zmax"```): ridge is any face whose center $z \geq 0$. This is equiv. to ```zmax``` with ```tau``` 0.
   * ```"show"``` whether to switch 3D viewport to ```material preview mode``` the ridge and non-ridge areas are marked by colors specified in ```"materials"```.
-* ```"shape"```: ```{"fit": "SP.Y0", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]}```. Shape approximation hyperparameters.
+* ```"shape"```: ```{"fit": "SP", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]}```. Shape approximation hyperparameters.
   * ```"fit"``` Method to fit the shape, i.e., ellipse to the ridge data.
     * ```SP``` employs ```curve_fit``` ellipse $\frac{x^2}{\alpha^2} + \frac{(y - y_c)^2}{\beta^2} = 1$.
     * ```SP.Y0``` employs ```curve_fit``` ellipse $\frac{x^2}{\alpha^2} + \frac{y^2}{\beta^2} = 1$.
     * ```SP.BNDS``` employs ```curve_fit``` ellipse with all $\alpha$, $\beta$, and $y_c$ are bounded to $-2 \bar{r}, 2 \bar{r}$.
-    * ```GD``` NOT YET IMPLEMENTED! Gradient descend. This does not require ```scipy```. 
- "shape_collection": "Bridge",
- "shape_save": "shape.pkl", 
-     "cross_sect_angles": {"mode": "keys", "key1": "T1'", "key2": "C1",
-                       "omode": "fixed", "phi1": 0, "phi2": 2.8},
-     "cross_sect_reso": 40,
- "cross_sect": {"angle_keys": ["T1'", "C1"], "radial_bounds": ["RI", "RO"], 
-                "radial_mode": "Z", "resolution": 40},
- "cross_sect_collection": "Bridge",
- "cross_sect_save": "xsect.pkl"
-}
-```
+    * ```GD``` NOT YET IMPLEMENTED! Gradient descend. This does not require ```scipy```, but is slow and requires all GD practices. Not recommended if ```scipy``` is available.
+  * ```"init"``` Method to initialize the model parameters.
+    * ```"circle"``` uses circle parameters to initialize, i.e., $\alpha = \bar{r}$, $\beta = \bar{r}$, and $y_c = 0$.
+    * ```"manual"``` set parameters directly, requires ```man_params```, e.g., ```"man_params": (20, 20, 0)```.
+  * ```"resolution"``` Resolution of the shape geometry generated.
+  * ```"angles"``` Keypoints to specify the segment of the shape model to approximte "ridge" shape.
+* ```"shape_collection"```: ```"Bridge"```. Name of the shape collection, created if not exists.
+* ```"shape_save"```: ```"shape.pkl"```. Filename of the saved shape results.
+* ```"cross_sect"```: ```{"angle_keys": ["T1'", "C1"], "radial_bounds": ["RI", "RO"], "radial_mode": "Z", "resolution": 40}```. Cross-section approximation hyperparameters.
+  * ```angle_keys```: key points specifying segment. These are independent from shape angles to give freedom to the cross-section approximation, e.g., it can be chosen to fit to a larger segment than what shape is prepared, to account for possible plate movement.
+  * ```"radial_bounds"```:  key points specifying radial bounds, or how wide the cross-section is accounting for.
+  * ```"radial_mode"```: Method to take radial bounds into selection.
+    * ```"R"```: Approximate a cross-section of IOS whose face center $r_1 \leq r \leq r_2$,
+      where $r_1$ and $r_2$ are radials of keypoints.
+    * ```"Z"```: Approximate a cross-section of IOS whose face center either having $z \geq z_1$ and $r < r_1$ or having $z \geq z_2$ and $r < r_2$.
+  * ```"resolution"```: A number of discretizing bins.
+      
+* ```"cross_sect_collection"```: ```"Bridge"```
+* ```"cross_sect_save"```: ```"xsect.pkl"```
 
 ---
 
