@@ -20,10 +20,10 @@
     packages_path = r"C:\Users\ASUS\AppData\Roaming\Python\Python310\site-packages"
     ```
   
-* 1. In Blender, under ```scripting``` > ```Text``` > ```Open```, choose ```AutoBridgeV2.py```
-* 2. Click ```Run script``` (Alt P, in windows)
-* 3. 3. In ```3D Viewport```, there will be side tab ```Dental Workflow```.
-* 4. Follow steps in the workflow. 
+1. In Blender, under ```scripting``` > ```Text``` > ```Open```, choose ```AutoBridgeV2.py```
+2. Click ```Run script``` (Alt P, in windows)
+3. In ```3D Viewport```, there will be side tab ```Dental Workflow```.
+4. Follow steps in the workflow. 
  
 # Next
 * Evaluation.
