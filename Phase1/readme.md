@@ -41,7 +41,13 @@ Fields:
     * ```"zmax"```: ridge is any face whose center $z \geq \tau z_\max$,
       where $z_\max$ is the maximal $z$ and $\tau$ is specified by ```"tau"```.
     * ```"z >= 0"``` (or anything, but ```"zmax"```): ridge is any face whose center $z \geq 0$.
- "shape": {"fit": "SP.Y0", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]},
+  * ```"show"``` whether to switch 3D viewport to ```material preview mode``` the ridge and non-ridge areas are marked by colors specified in ```"materials"```.
+* ```"shape"```: ```{"fit": "SP.Y0", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]}```. Shape approximation hyperparameters.
+  * ```"fit"``` Method to fit the shape, i.e., ellipse to the ridge data.
+    * ```SP``` employs ```curve_fit``` ellipse $\frac{x^2}{\alpha^2} + \frac{(y - y_c)^2}{\beta^2} = 1$.
+    * ```SP.Y0``` employs ```curve_fit``` ellipse $\frac{x^2}{\alpha^2} + \frac{y^2}{\beta^2} = 1$.
+    * ```SP.BNDS``` employs ```curve_fit``` ellipse with all $\alpha$, $\beta$, and $y_c$ are bounded to $-2 \bar{r}, 2 \bar{r}$.
+    * ```GD``` NOT YET IMPLEMENTED! Gradient descend. This does not require ```scipy```. 
  "shape_collection": "Bridge",
  "shape_save": "shape.pkl", 
      "cross_sect_angles": {"mode": "keys", "key1": "T1'", "key2": "C1",
