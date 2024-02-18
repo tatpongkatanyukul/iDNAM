@@ -40,6 +40,11 @@ Fields:
 * ```"save_context"```: ```true```. Whether to save the context, e.g., faces and keypoints, for further investigation.
 * ```"faces_file"```: ```"faces.npy"```. Filename of the saved faces (IOS polygons).
 * ```"kp_file"```: ```"kp.pkl"```. Filename of the saved keypoints: user-specified keypoints.
+* ```"reference"```: ```{"autoaxis": false, "mode": "no constraint"}```
+  * ```autoaxis``` NOT YET IMPLEMENTED! Automatic orientation: x-,y-,z-axes.
+  * ```"mode"```
+    * ```"constraint"``` NOT YET COMPLETED! snap to the target surface. Unless axes are well set, this does not help. Also, it requires setting of z values, otherwise it will only cause confusion.
+    * ```"no constraint"``` (or anything, but ```"constraint"```) No snapping to the target surface.
 * ```"ridge"```: ```{"criteria": "zmax", "tau": 0.0, "show": true, "materials": {"ridge": [1,0,0,1], "non-ridge": [0.5,0.5,0.5,1]}}```. Ridge identification hyperparameters.
   * ```criteria``` options
     * ```"zmax"```: ridge is any face whose center $z \geq \tau z_\max$,
