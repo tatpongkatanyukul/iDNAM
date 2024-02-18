@@ -69,7 +69,21 @@ Fields:
 
 ---
 
+## Step 5
 ![Starting](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
+
+## Step 6
+![Ridge identification result](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Ridge.png)
+
+## Step 7
+![Shape approximation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Shape.png)
+
+## Step 8
+![Cross-section](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/CrossSection.png)
+
+## Step 9
+![Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Bridge.png)
+
 
 ---
 
