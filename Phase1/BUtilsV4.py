@@ -260,10 +260,10 @@ def make_bridge(shp, xsec, angles):
         obj.select_set(False)
 
     for collection in [c for c in bpy.data.collections]:
-        print('    * collection.name=', collection.name)
+        # print('    * collection.name=', collection.name)
 
         for obj in collection.objects:
-            print('        * obj.name=', obj.name)
+            # print('        * obj.name=', obj.name)
 
             if obj.name in [shp, xsec]:
                 bpy.context.view_layer.objects.active = obj
@@ -281,10 +281,48 @@ def make_bridge(shp, xsec, angles):
     ## Selection block : END
     #############################################
 
-    # 4.2. 
+    # 4.2. Bevel
     obj = bpy.data.objects[shp]
     obj.data.bevel_mode = 'OBJECT'
     obj.data.bevel_object = bpy.data.objects[xsec]
+
+    # 4.3. Convert shp to mesh
+    #############################################
+    ## Selection block : START  
+    selected_objects = bpy.context.selected_objects
+    active_object = bpy.context.active_object
+    for obj in selected_objects:
+        obj.select_set(False)
+
+    found = 0
+    for collection in [c for c in bpy.data.collections]:
+        # print('    * collection.name=', collection.name)
+
+        for obj in collection.objects:
+            # print('        * obj.name=', obj.name)
+
+            if obj.name in [shp]:
+                bpy.context.view_layer.objects.active = obj
+                selection = obj.select_get()
+                obj.select_set(True)
+
+                bpy.ops.object.convert(target='MESH')
+                
+                obj.select_set(selection)
+                found += 1
+                break     
+
+        if found == 1:
+            break     
+
+    # restore saved state of selection
+    bpy.context.view_layer.objects.active = active_object
+    for obj in selected_objects:
+        obj.select_set(True)
+    ## Selection block : END
+    #############################################
+
+
 
     return
 
