@@ -40,7 +40,7 @@ Fields:
   * ```criteria``` options
     * ```"zmax"```: ridge is any face whose center $z \geq \tau z_\max$,
       where $z_\max$ is the maximal $z$ and $\tau$ is specified by ```"tau"```.
-    * ```"z >= 0"``` (or anything, but ```"zmax"```): ridge is any face whose center $z \geq 0$.
+    * ```"z >= 0"``` (or anything, but ```"zmax"```): ridge is any face whose center $z \geq 0$. This is equiv. to ```zmax``` with ```tau``` 0.
   * ```"show"``` whether to switch 3D viewport to ```material preview mode``` the ridge and non-ridge areas are marked by colors specified in ```"materials"```.
 * ```"shape"```: ```{"fit": "SP.Y0", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]}```. Shape approximation hyperparameters.
   * ```"fit"``` Method to fit the shape, i.e., ellipse to the ridge data.
