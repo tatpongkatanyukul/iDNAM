@@ -18,15 +18,15 @@ def approx_xsect(faces_rtz, shape_obj, bound_params, resolution):
     rmarks = None
     if bound_params["radial_mode"] == "Z":
     
-        z1, z2 = bound_params["zs"]
+        z1, z2 = bound_params["zs"] # (inner, outer)
 
         ell_rs = shape_obj.calc_radius(faces_rtz[:,1])
 
-        outers = (faces_rtz[:,0] >= ell_rs) & (faces_rtz[:,2] >= z1)
+        inners = (faces_rtz[:,0] < ell_rs) & (faces_rtz[:,2] >= z1)
 
-        inners = (faces_rtz[:,0] < ell_rs) & (faces_rtz[:,2] >= z2)
+        outers = (faces_rtz[:,0] >= ell_rs) & (faces_rtz[:,2] >= z2)
 
-        rmarks = outers | inners
+        rmarks = inners | outers
 
     elif bound_params["radial_mode"] == "R":
 

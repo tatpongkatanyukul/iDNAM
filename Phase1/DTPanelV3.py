@@ -532,7 +532,7 @@ class WM_OT_Approx_Shape(bpy.types.Operator):
                 
             vertices = [ [xs[i], ys[i], z] for i in range(len(tss[j]))]
 
-            print(f'DEBUG: ts = {np.min(tss[j])}, {np.max(tss[j])}')
+            # print(f'DEBUG: ts = {np.min(tss[j])}, {np.max(tss[j])}')
 
             print('DTPanel: * invoke BUtils.create_curve')
             uu.log(f"DTPanel: invoke BUtils.create_curve.", logfile)
@@ -597,10 +597,10 @@ class WM_OT_Approx_XSect(bpy.types.Operator):
         xs_bounds["radial_mode"] = xspar["radial_mode"]
 
         if xspar["radial_mode"] == "Z":
-            z1 = key_radial1[2]
-            z2 = key_radial2[2]
+            z1 = key_radial1[2] # inner
+            z2 = key_radial2[2] # outer
             print(f'DTPanel:   * radial {xspar["radial_mode"]} between {xspar["radial_bounds"]} = [{z1:.2f}, {z2:.2f}]')
-            xs_bounds["zs"] = (z1, z2)    
+            xs_bounds["zs"] = (z1, z2)  # (inner, outer)  
 
         elif xspar["radial_mode"] == "R":
             rad1 = sa.rec2pol(np.array(key_radial1)[:2].reshape((-1,2)))[0,0]
