@@ -51,8 +51,8 @@ print("    * Append working path:", work_path)
 #print("      Working path content:")
 #print('      * ', os.listdir(work_path))
 
-import DTPanelV3 as dt             # GUI
-import BUtilsV4 as uu                # General blender utils
+import DTPanelV4 as dt             # GUI
+import BUtilsV5 as uu                # General blender utils
 import RidgeIdenV3 as ri           # Ridge identification
 import ShapeApproxV4 as sa         # Shape approximation
 import CrossSecApproxV4 as csa     # Cross-section approximation

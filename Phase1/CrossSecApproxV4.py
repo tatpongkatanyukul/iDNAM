@@ -1,6 +1,4 @@
 import numpy as np
-from ShapeApproxV2 import rec2pol
-import BUtilsV2 as uu
 
 def approx_xsect(faces_rtz, shape_obj, bound_params, resolution):
     '''
@@ -15,12 +13,12 @@ def approx_xsect(faces_rtz, shape_obj, bound_params, resolution):
 
     phi1, phi2 = bound_params["angles"]
 
+    ell_rs = shape_obj.calc_radius(faces_rtz[:,1])
+
     rmarks = None
     if bound_params["radial_mode"] == "Z":
     
         z1, z2 = bound_params["zs"] # (inner, outer)
-
-        ell_rs = shape_obj.calc_radius(faces_rtz[:,1])
 
         inners = (faces_rtz[:,0] < ell_rs) & (faces_rtz[:,2] >= z1)
 
@@ -30,10 +28,10 @@ def approx_xsect(faces_rtz, shape_obj, bound_params, resolution):
 
     elif bound_params["radial_mode"] == "R":
 
-        rad1, rad2 = bound_params['rs']
+        dr1, dr2 = bound_params['drs']
 
-        rmarks = (faces_rtz[:,0] >= rad1) & \
-                 (faces_rtz[:,0] <= rad2)
+        rmarks = (faces_rtz[:,0] >= ell_rs + dr1) & \
+                 (faces_rtz[:,0] <= ell_rs + dr2)
 
     else:
         raise Exception(f"Error: radial_mode = {bound_params['radial_mode']}")
