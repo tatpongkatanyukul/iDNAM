@@ -68,8 +68,8 @@ Fields:
   * ```angle_keys```: key points specifying segment. These are independent from shape angles to give freedom to the cross-section approximation, e.g., it can be chosen to fit to a larger segment than what shape is prepared, to account for possible plate movement.
   * ```"radial_bounds"```:  key points specifying radial bounds, or how wide the cross-section is accounting for.
   * ```"radial_mode"```: Method to take radial bounds into selection.
-    * ```"R"```: Approximate a cross-section of IOS whose face center $r_1 \leq r \leq r_2$,
-      where $r_1$ and $r_2$ are radials of keypoints.
+    * ```"R"```: Approximate a cross-section of IOS whose face center $r_c + \Delta r_1 \leq r \leq r_c + \Delta r_2$,
+      where $\Delta r_1 = r_1 - r_c$, $\Delta r_2 = r_2 - r_c$, $r_1$ and $r_2$ are radials of keypoints; and $r_c$ is the radial of the center of the ellipse at the corresponding angle.
     * ```"Z"```: Approximate a cross-section of IOS whose face center either having $z \geq z_1$ and $r < r_1$ or having $z \geq z_2$ and $r < r_2$.
   * ```"resolution"```: A number of discretizing bins.
       
