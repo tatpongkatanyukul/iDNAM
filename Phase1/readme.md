@@ -70,7 +70,9 @@ Fields:
   * ```"radial_mode"```: Method to take radial bounds into selection.
     * ```"R"```: Approximate a cross-section of IOS whose face center $r_c + \Delta r_1 \leq r \leq r_c + \Delta r_2$,
       where $\Delta r_1 = r_1 - r_c$, $\Delta r_2 = r_2 - r_c$, $r_1$ and $r_2$ are radials of keypoints; and $r_c$ is the radial of the center of the ellipse at the corresponding angle.
+      E.g., the final bridge will have a constant width controlled by 2 keypoints, in this example, ```RI``` and ```RO```.
     * ```"Z"```: Approximate a cross-section of IOS whose face center either having $z \geq z_1$ and $r < r_1$ or having $z \geq z_2$ and $r < r_2$.
+      E.g., in this example, the final bridge will have inner depth as deep as ```RI``` and outer depth as deep as ```RO```.
   * ```"resolution"```: A number of discretizing bins.
       
 * ```"cross_sect_collection"```: ```"Bridge"```
