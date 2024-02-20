@@ -10,7 +10,8 @@
 5. Names of all key points are adjustible in a single point, ```AutoBridgeV2.py```
 
 # To do
-1. Snap keypoints, e.g., C, T, T' to the surface for ease of handling.
+1. Snap keypoints, e.g., ```C```, ```T```, ```T'```, to the surface for ease of handling.
+   This requires proper cooridnation. E.g., when z-axis is totally off, snap (projection along z) causes a weird behavior.
 2. Auto smoothening the cross-section.
 3. Auto de-corner the section corners.
 4. Easy set-up facility for setting up scipy to Blender-Python.
