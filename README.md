@@ -42,6 +42,16 @@ Two main tasks
 ---
 # Log
 
+* 2024 Feb 20
+  * Refine [Phase 1](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/readme.md)
+  * Work on the [set up script](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/AutoSetupV1.py)
+  * Issues left
+    * A little nuisance on moving reference points
+      * Cause: data axis is off
+      * Chicken-and-egg problem: once T, T', and C are located, Aj Wasu has coded the "Move to World Location".
+      * But moving the objects in a disoriented axes is like a drunkard trying to walk on a straight line.
+      * [PCA](https://stackoverflow.com/questions/32569188/scipy-svd-vs-numpy-svd) can come to rescue.
+
 * 2024 Feb 10
   * [Phase 1](https://drive.google.com/drive/folders/13EcyENB7C4cwWotuD_PyRjYlV1-YZG6h?usp=drive_link) 
 
