@@ -2,12 +2,13 @@
  "save_context": true, 
  "faces_file": "faces.npy",
  "kp_file": "kp.pkl",
+ "reference": {"autoaxis": false, "mode": "no constraint"},
  "ridge": {"criteria": "z >= 0", "tau": 0.0, "show": true, "materials": {"ridge": [1,0,0,1], "non-ridge": [0.5,0.5,0.5,1]}}, 
- "shape": {"fit": "SP", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"]},
+ "shape": {"fit": "SP", "init": "circle", "resolution": 100, "angles": ["T1'", "C1"], "output_names": ["shape", "bridge"]},
  "shape_collection": "Bridge",
  "shape_save": "shape.pkl", 
  "cross_sect": {"angle_keys": ["T1'", "C1"], "radial_bounds": ["RI", "RO"], 
-                "radial_mode": "Z", "resolution": 40},
+                "radial_mode": "R", "resolution": 40, "output_name": "xsect"},
  "cross_sect_collection": "Bridge",
  "cross_sect_save": "xsect.pkl"
 }

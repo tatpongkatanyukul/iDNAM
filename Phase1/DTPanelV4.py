@@ -500,8 +500,8 @@ class WM_OT_Approx_Shape(bpy.types.Operator):
         global faces
         global keypoints
 
-        model_name = "ell"
-        shape_name = "ridge"
+        model_name = pvars["shape"]["output_names"][0]
+        shape_name = pvars["shape"]["output_names"][1]
 
         print("DTPanel: Approximating ridge shape")
 
@@ -590,7 +590,7 @@ class WM_OT_Approx_XSect(bpy.types.Operator):
         global pvars
         global faces
 
-        xsect_name = "xsect"
+        xsect_name = pvars["cross_sect"]["output_name"]
         print("DTPanel: Approximating ridge cross-section")
 
         xspar = pvars["cross_sect"]
@@ -755,7 +755,28 @@ class WM_OT_Clear_Bridge(bpy.types.Operator):
 
         print(f"DTPanel: Clear bridge")
 
-        raise Exception("NOT YET IMPLEMENT")
+        # raise Exception("NOT YET IMPLEMENT")
+
+        # if bpy.context.object.mode == 'EDIT':
+        #     bpy.ops.object.mode_set(mode='OBJECT')
+
+        bpy.ops.object.select_all(action='DESELECT')
+        try:
+            bpy.data.objects['bridge'].select_set(True)
+        except Exception as err:
+            print("DTPanel: err =", err)
+        
+        try:
+            bpy.data.objects['shape'].select_set(True)
+        except Exception as err:
+            print("DTPanel: err =", err)
+        
+        try:
+            bpy.data.objects['xsect'].select_set(True)
+        except Exception as err:
+            print("DTPanel: err =", err)
+
+        bpy.ops.object.delete()
 
         print("DTPanel: Clear Bridge Done.")
         uu.log(f"DTPanel: Clear Bridge Done.", logfile)
