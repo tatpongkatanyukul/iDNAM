@@ -7,6 +7,6 @@
     * Convex
     * IOS lies above the bridge  
 
-![Problem]([Log/probXSect1.png](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Log/probXSect1_annotated.png)https://github.com/tatpongkatanyukul/iDNAM/blob/main/Log/probXSect1_annotated.png)
+![Problem](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Log/probXSect1_annotated.png)
 
 ---
