@@ -79,15 +79,15 @@ if __name__ == '__main__':
 #    assert Exception("STOP")
 
 
-    if len(x.stderr) > 0:
-        print(x.stderr)
-    else:
+    # if len(x.stderr) > 0:
+    #     print(x.stderr)
+    # else:
         
-        try:
-            import scipy as sp
-            print(f'Scipy version {sp.__version__} has been successfully installed.')
-        except Exception as err:
-            print("Test run fails. Error:", err)
+    #     try:
+    #         import scipy as sp
+    #         print(f'Scipy version {sp.__version__} has been successfully installed.')
+    #     except Exception as err:
+    #         print("Test run fails. Error:", err)
             
 
 
