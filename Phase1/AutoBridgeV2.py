@@ -39,15 +39,40 @@ script_dir = pathlib.Path(script_path).resolve().parent
 work_path = str(script_dir)
 #work_path = r"C:\Y2024\iDNAM\D230203"
 
+###################
+## Read setup.json
+###################
+
+import json
+
+fsetup='setup.json' 
+psetup = os.path.join(work_path,fsetup)
+
+# Read configuration and parameters
+setup_vars = {} 
+
+with open(psetup) as f:
+   setup_vars = json.load(f)
+
+####################
+# Add working path
+####################
+
 import sys
 sys.path.append(work_path)
 
+print("    * Append working path:", work_path)
+
+####################
+# Add scipy path
+####################
+
 # Path for scipy
-packages_path = r"C:\Users\ASUS\AppData\Roaming\Python\Python310\site-packages"
+packages_path = setup_vars["scipy_path"]
 sys.path.insert(0, packages_path )
 
+print("    * Set-up scipy path:", packages_path)
 
-print("    * Append working path:", work_path)
 #print("      Working path content:")
 #print('      * ', os.listdir(work_path))
 
@@ -64,7 +89,7 @@ importlib.reload(ri)
 importlib.reload(sa)
 importlib.reload(csa)
 
-import json
+
 
 #############################
 # BEGIN MAIN
