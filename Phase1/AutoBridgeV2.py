@@ -76,7 +76,7 @@ print("    * Set-up scipy path:", packages_path)
 #print("      Working path content:")
 #print('      * ', os.listdir(work_path))
 
-import DTPanelV4 as dt             # GUI
+import DTPanelV5 as dt             # GUI
 import BUtilsV5 as uu                # General blender utils
 import RidgeIdenV3 as ri           # Ridge identification
 import ShapeApproxV4 as sa         # Shape approximation
