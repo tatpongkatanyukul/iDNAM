@@ -43,7 +43,9 @@ Two main tasks
 # Log
 
 * 2024 Feb 21
-  * [PCA to pre-orient axis](https://colab.research.google.com/drive/10eDKV-de9gIJF0asBL6s9_T-2AJ6aq-n) 
+  * [PCA to pre-orient axis](https://colab.research.google.com/drive/10eDKV-de9gIJF0asBL6s9_T-2AJ6aq-n)
+  * [Investigate a ridge-over-bridge case](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Log/readme.md)
+  * Idea to fix multiple-peak case: instead of $\max \{ bin(i) \}$, if we do $\max \{ bin{i-1}, bin(i) \}$ then we don't have to worry about trailing edge or correcting heights after peak anymore. The lead edge will be the same.
 
 * 2024 Feb 20
   * Refine [Phase 1](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/readme.md)
