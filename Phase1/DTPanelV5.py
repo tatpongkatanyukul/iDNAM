@@ -25,7 +25,7 @@ import json
 import BUtilsV5 as uu
 import RidgeIdenV3 as ri
 import ShapeApproxV4 as sa
-import CrossSecApproxV4 as csa
+import CrossSecApproxV5 as csa
 
 import importlib
 # importlib.reload(ab)
@@ -673,7 +673,8 @@ class WM_OT_Approx_XSect(bpy.types.Operator):
         print('DTPanel: * invoke CrossSecApprox.approx_xsect')
         uu.log(f"DTPanel: invoke CrossSecApprox.approx_xsect.", logfile)
 
-        xsect_verts, fb = csa.approx_xsect(faces_rtz, status["shape_rst"]["obj"], xs_bounds, xspar["resolution"])
+        xsect_verts, fb = csa.approx_xsect(faces_rtz, status["shape_rst"]["obj"], xs_bounds, 
+                    remov_outlier=pvars["cross_sect"]["remov_outliers"], resolution=xspar["resolution"])
 
         # Create cross-section geometry
         uu.create_curve(xsect_verts, curve_name=xsect_name, 

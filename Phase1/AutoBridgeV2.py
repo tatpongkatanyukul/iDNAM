@@ -80,7 +80,7 @@ import DTPanelV5 as dt             # GUI
 import BUtilsV5 as uu                # General blender utils
 import RidgeIdenV3 as ri           # Ridge identification
 import ShapeApproxV4 as sa         # Shape approximation
-import CrossSecApproxV4 as csa     # Cross-section approximation
+import CrossSecApproxV5 as csa     # Cross-section approximation
 
 import importlib
 importlib.reload(dt)

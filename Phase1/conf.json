@@ -8,7 +8,7 @@
  "shape_collection": "Bridge",
  "shape_save": "shape.pkl", 
  "cross_sect": {"angle_keys": ["T1'", "C1"], "radial_bounds": ["RI", "RO"], 
-                "radial_mode": "R", "resolution": 40, "output_name": "xsect"},
+                "radial_mode": "R", "remov_outliers": true, "resolution": 40, "output_name": "xsect"},
  "cross_sect_collection": "Bridge",
  "cross_sect_save": "xsect.pkl"
 }
