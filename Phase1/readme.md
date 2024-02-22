@@ -26,12 +26,8 @@
 
 # Usage
 * Requirement
-  * Have ```scipy``` installed for Blender-Python
-  * Have scipy installed path configured in ```AutoBridgeV2.py```
-    ```
-    # Path for scipy
-    packages_path = r"C:\Users\ASUS\AppData\Roaming\Python\Python310\site-packages"
-    ```
+  * Have ```scipy``` installed for Blender-Python (manually or automatically if run ```AutoSetupV2.py```)
+  * Have scipy installed path configured in ```setup.json``` (manually or automatically if run ```AutoSetupV2.py```)
   
 1. In Blender, under ```scripting``` > ```Text``` > ```Open```, choose ```AutoBridgeV2.py```
 2. Click ```Run script``` (Alt P, in windows)
@@ -43,7 +39,7 @@
 The configuration file ```conf.json```, specified in ```AutoBridgeV2.py``` (i.e., ```cfg='conf.json'```)
 
 Fields:
-* ```"log"```: ```"log.txt"```. A log filename, without path. The path is automatically set to the working path, where the ```AutoBridgeV2.py``` is.
+* ```"log"```: ```"log.txt"```. A log filename, without path. The path is automatically set to the working path, where the ```AutoBridgeV3.py``` is.
 * ```"save_context"```: ```true```. Whether to save the context, e.g., faces and keypoints, for further investigation.
 * ```"faces_file"```: ```"faces.npy"```. Filename of the saved faces (IOS polygons).
 * ```"kp_file"```: ```"kp.pkl"```. Filename of the saved keypoints: user-specified keypoints.
