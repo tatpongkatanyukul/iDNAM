@@ -42,6 +42,9 @@ Two main tasks
 ---
 # Log
 
+* 2024 Feb 22
+  * Finish [Phase 1](https://github.com/tatpongkatanyukul/iDNAM/tree/main/Phase1)
+
 * 2024 Feb 21
   * [PCA to pre-orient axis](https://colab.research.google.com/drive/10eDKV-de9gIJF0asBL6s9_T-2AJ6aq-n)
   * [Investigate a ridge-over-bridge case](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Log/readme.md)
