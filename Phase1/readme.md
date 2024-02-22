@@ -114,4 +114,6 @@ Fields:
 
 # Next
 * Evaluation.
+* Auto-orientation.
+* Fourier shape.
 * Phase 2: make it a print-ready plate.
