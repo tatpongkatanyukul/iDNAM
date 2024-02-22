@@ -154,12 +154,22 @@ if __name__ == '__main__':
    # Set-up materials
    dmats = pvars["materials"]
       
-      
+   # Add materials      
+   uu.add_materials(dmats)
+   
+#   if len(dt.mat_dict) == 0:
    # Clear materials        
    uu.clear_materials(dt.CODE, clear_target="TARGET")
 
    # Add materials      
    dt.mat_dict = uu.add_materials(dmats)
+
+   # I have to do Add, Clear, Add
+   # So that it will work whether there are some initial materials or not.
+           
+   print('Debug =', )
+   
+   print('  * DT Materials =', dt.mat_dict)
 
    uu.log('AutoBridge: Set-up object names', logfile)
 
