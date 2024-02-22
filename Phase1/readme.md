@@ -7,14 +7,20 @@
 * Although it is possible to adjust a shape model, I am not feeling comfortable recommending it.
 * Of course, the final bridge model can also be modified.
 4. All setting parameters are accessible through json: ```conf.json```.
-5. Names of all key points are adjustible in a single point, ```AutoBridgeV2.py```
+5. Names of all key points are adjustible in a single point, ```AutoBridgeV3.py```
+6. It provides visualization for ridge identification, shape approximation, and cross-section approximation.
 
 # To do
 1. Snap keypoints, e.g., ```C```, ```T```, ```T'```, to the surface for ease of handling.
    This requires proper cooridnation. E.g., when z-axis is totally off, snap (projection along z) causes a weird behavior.
 2. Auto smoothening the cross-section.
 3. Auto de-corner the section corners.
-4. Easy set-up facility for setting up scipy to Blender-Python.
+4. ~~Easy set-up facility for setting up scipy to Blender-Python.~~ Done! See ```AutoSetupV2.py``` along with ```setup.json```.
+
+# Technical values beyond ITTA2024 paper
+
+1. Shape approximation allows an off-center ($y_c \neq 0$) ellipse
+2. Cross-section approximation has better handling on trailing edges in multiple-peak cases.
 
 ---
 
