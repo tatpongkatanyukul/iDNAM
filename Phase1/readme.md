@@ -22,6 +22,11 @@
 1. Shape approximation allows an off-center ($y_c \neq 0$) ellipse
 2. Cross-section approximation has better handling on trailing edges in multiple-peak cases.
 
+# Opportunities
+
+1. Auto-orientation: PCA 
+2. More flexible shape: Fourier approximation
+
 ---
 
 # Usage
