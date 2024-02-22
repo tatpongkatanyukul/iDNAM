@@ -53,7 +53,7 @@ Fields:
   * ```"mode"```
     * ```"constraint"``` NOT YET COMPLETED! snap to the target surface. Unless axes are well set, this does not help. Also, it requires setting of z values, otherwise it will only cause confusion.
     * ```"no constraint"``` (or anything, but ```"constraint"```) No snapping to the target surface.
-* ```"ridge"```: ```{"criteria": "zmax", "tau": 0.0, "show": true, "materials": {"ridge": [1,0,0,1], "non-ridge": [0.5,0.5,0.5,1]}}```. Ridge identification hyperparameters.
+* ```"ridge"```: ```{"criteria": "zmax", "tau": 0.0, "show": true}```. Ridge identification hyperparameters.
   * ```criteria``` options
     * ```"zmax"```: ridge is any face whose center $z \geq \tau z_\max$,
       where $z_\max$ is the maximal $z$ and $\tau$ is specified by ```"tau"```.
@@ -90,9 +90,6 @@ Fields:
 
 ## Starting
 ![Steps](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Steps.png)
-
-
-
 
 ## Step 5
 ![Set keypoints](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
