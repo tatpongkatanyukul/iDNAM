@@ -36,7 +36,7 @@
 
 # Configuration
 
-The configuration file ```conf.json```, specified in ```AutoBridgeV2.py``` (i.e., ```cfg='conf.json'```)
+The configuration file ```conf.json```, specified in ```AutoBridgeV3.py``` (i.e., ```cfg='conf.json'```)
 
 Fields:
 * ```"log"```: ```"log.txt"```. A log filename, without path. The path is automatically set to the working path, where the ```AutoBridgeV3.py``` is.
