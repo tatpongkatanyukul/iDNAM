@@ -116,6 +116,8 @@ Cross-section is approximated based on ridge data (from step 6), shape approxima
 
 The bridge geometry is created based on shape (from step 7) and cross-section (from step 8).
 
+![Make Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/MakeBridge.png)
+
 ![Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Bridge.png)
 
 
