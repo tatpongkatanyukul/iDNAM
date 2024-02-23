@@ -94,16 +94,28 @@ Fields:
 ## Step 5
 ![Set keypoints](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
 
-## Step 6
+## Step 6: Ridge identification
+
+After ridge identification, all faces identified to be ridge are assigned "ridge" material (color as specified in ```conf.json```, here shown in blue)
+
 ![Ridge identification result](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IdenRidge.png)
 
-## Step 7
+## Step 7: Shape approximation
+
+Shape is approximated based on ridge data (from step 6) and shape prior, e.g., ellipse and perhaps having center on (0,0,0) using ```shape``` ```fit``` = ```SP``` or (0,y,0) using ```SP.Y0``` in ```conf.json```. The final shape and approximate bridge are created as Blender geometries. The generated shape is highlighted in orange in this example.
+
 ![Shape approximation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/ApproxShape.png)
 
-## Step 8
+## Step 8: Cross-section approximation
+
+Cross-section is approximated based on ridge data (from step 6), shape approximation (from step 7), and cross-section mode and bounds, specified in ```conf.json``` (under ```cross_sect```). After the approximation, the cross-section geometry is created and the faces involved in the process are assigned "effective" (used for approximation) or "non-effective" (discarded based on outlier criteria). Here the ```effective``` are shown in red.
+
 ![Cross-section](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/ApproxCrossSection.png)
 
 ## Step 9
+
+The bridge geometry is created based on shape (from step 7) and cross-section (from step 8).
+
 ![Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Bridge.png)
 
 
