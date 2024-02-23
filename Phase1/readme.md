@@ -95,13 +95,13 @@ Fields:
 ![Set keypoints](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IOS.png)
 
 ## Step 6
-![Ridge identification result](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Ridge.png)
+![Ridge identification result](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/IdenRidge.png)
 
 ## Step 7
-![Shape approximation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Shape.png)
+![Shape approximation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/ApproxShape.png)
 
 ## Step 8
-![Cross-section](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/CrossSection.png)
+![Cross-section](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/ApproxCrossSection.png)
 
 ## Step 9
 ![Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/Bridge.png)
