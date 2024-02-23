@@ -114,7 +114,10 @@ Cross-section is approximated based on ridge data (from step 6), shape approxima
 
 ## Step 9
 
-The bridge geometry is created based on shape (from step 7) and cross-section (from step 8).
+The bridge geometry is created based on shape (from step 7) and cross-section (from step 8). 
+
+Note: the "cut" of the bridge may look different from the "cut" of the effective faces used to make bridge, 
+because the bridge bounds are based on an origin depending on the "```shape``` ```fit```" option, while the effective faces are always based on (0,0,0).
 
 ![Make Bridge](https://github.com/tatpongkatanyukul/iDNAM/blob/main/Phase1/MakeBridge.png)
 
