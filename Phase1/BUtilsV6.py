@@ -159,11 +159,6 @@ def add_materials(dmaterials, i=0):
         # end Create material
     # end for
 
-    # Update mat_dict
-    md = update_mat_dict()
-
-    print('BUtils.add_materials: mat_dict =', mat_dict)
-
     return mat_dict
 
 

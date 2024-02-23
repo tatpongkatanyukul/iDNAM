@@ -34,10 +34,17 @@ importlib.reload(ri)
 importlib.reload(sa)
 importlib.reload(csa)
 
+# Set by AutoBridge (Main script)
 wpath = "."
 logfile = "log.txt"
 config_file = ""
+
+CODE = {} # {"T": "T", "Tp": "T'", "C": "C"}
+mat_dict = {}
+
 pvars = {}               # Dummy; loaded and set by AutoBridge.py
+
+# Set by actions on Panel
 faces = np.array([])     # Dummy: set by WM_OT_Iden_Ridge
 keypoints = {}           # Dummy: set by WM_OT_Iden_Ridge
 
@@ -48,10 +55,9 @@ status = {"aligned": False,
           "data_ready": False, 
           "ridge": False, "ridge_mat_index": None,
           "shape": False, "shape_rst": None,
-          "cross_section": False, "xsect_rst": None}
+          "cross_section": False, "xsect_rst": None,
+          "bridge": False}
 
-CODE = {"T": "T", "Tp": "T'", "C": "C"}
-mat_dict = {}
 
 # not work as pull detect
 
@@ -448,7 +454,7 @@ class WM_OT_Iden_Ridge(bpy.types.Operator):
 
         active_o, selected_o = uu.select_objects([CODE['target']])
 
-        print("DTPanel: * read context")
+        print("DTPanel: * 1. read context")
         # Read context from Blender
         # faces = [material, center.x, center.y, center.z, normal.x, normal.y, normal.z]
         # keypoints = {"T": T, "Tp": Tp, "C": C}
@@ -473,22 +479,40 @@ class WM_OT_Iden_Ridge(bpy.types.Operator):
             except Exception as err:
                 uu.log(f"DTPanel: Fail to save. {err=}", logfile)
 
-        print('DTPanel: * invoke RidgeIden.iden_ridge')
+        print('DTPanel: * 2. invoke RidgeIden.iden_ridge')
         uu.log(f"DTPanel: invoke RidgeIden.iden_ridge.", logfile)
         ridge_ids, fb = ri.iden_ridge(faces, keypoints, pvars["ridge"])
                     
         uu.restore_selection(active_o, selected_o)
 
-        print('DTPanel: * assign materials by ridge')
+        print('DTPanel: * 3. assign materials by ridge')
 
-        # md = uu.update_mat_dict()
-        # print("DEBUG: uu.update_mat_dict() =", md)
+        print('DTPanel: * 3.1 clear materials')
+        # Clear and add materials
+        # Add and clear, so that there will always be some materials to clear.
 
+        dmats = pvars["materials"]
+        uu.add_materials(dmats)
+        uu.clear_materials(CODE, clear_target="ALL")
+        # Clear target, context, and data. All selected objects will be clear off all materials.
+
+        # Add materials      
+        mat_dict = uu.add_materials(dmats)
+        
+        print('DTPanel:   * mat_dict =', mat_dict)
+
+
+
+
+        print('DTPanel: * 3.2 add designaed materials')
+
+        print('DTPanel:   * add off-focus material')
         # Add default material for all faces
         obj = bpy.data.objects[CODE["target"]]
         for p in obj.data.polygons:
             p.material_index = mat_dict["off-focus"]
 
+        print('DTPanel:   * add ridge material')
         # Add material for ridge
         for id in ridge_ids:
             obj.data.polygons[id].material_index = mat_dict["ridge"]
@@ -601,7 +625,10 @@ class WM_OT_Approx_Shape(bpy.types.Operator):
     @classmethod
     def poll(cls, context):
         workable = False
-        if status["ridge"]:
+
+        # We have done the ridge, but not cross_section,
+        # because cross_section assigns face materials, invalidating ridge identification.
+        if status["ridge"] and not status["cross_section"]:
             workable = True
 
         return workable
@@ -760,6 +787,8 @@ class WM_OT_Make_Bridge(bpy.types.Operator):
         print('DTPanel: * invoke UUtils.make_bridge')
         uu.make_bridge(status["shape_rst"]["name"], 
             status["xsect_rst"]["name"], status["xsect_rst"]["bounds"]["angles"])
+
+        status["bridge"] = True
 
         print("DTPanel: Make Bridge Done;\n    * status =", status)
         uu.log(f"DTPanel: making bridge is done.", logfile)
