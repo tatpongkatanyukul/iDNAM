@@ -41,6 +41,10 @@ Two main tasks
 ---
 # Log
 
+* 2024 July 9
+  * Talk to Aj Anuparb
+  * [STL files](https://drive.google.com/drive/u/0/folders/1RGY4oe1fq1-ljXw90aQ52reQOMHk6Bwv)
+
 * 2024 Feb 22
   * Finish [Phase 1](https://github.com/tatpongkatanyukul/iDNAM/tree/main/Phase1)
 
