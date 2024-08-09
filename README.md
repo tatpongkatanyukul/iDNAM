@@ -39,7 +39,31 @@ Two main tasks
 * [Shape regression](https://colab.research.google.com/drive/1shFRNxwB2SVL8DPYXnpWWhgsHPg0WOnZ#scrollTo=yhaNKMWV8lrd)
 
 ---
+# To write
+
+* Moving ellipse: shape model
+* Fixing the double peak: cross-section model
+
+---
+# To do
+
+* Auto-alignment
+  * PCA 
+
+* Shape
+  * Fourier-approx shape
+  * Cross-section area as indicator of fitness vs parabola
+  * Morphogen: use other method than separation of variable to solve pde w/ B.C. = ellipse
+
+* Thicken the bridge
+* Fill the floor
+* dent it for fenum
+
+---
 # Log
+
+* 2024 July 6
+  * June left the project! 
 
 * 2024 July 9
   * Talk to Aj Anuparb
