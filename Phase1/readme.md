@@ -17,8 +17,11 @@
 3. Auto de-corner the section corners.
 4. ~~Easy set-up facility for setting up scipy to Blender-Python.~~ Done! See ```AutoSetupV2.py``` along with ```setup.json```.
 
-# Technical values beyond ITTA2024 paper
+# Technical values
 
+* ITTA2024: [Paper](https://github.com/tatpongkatanyukul/iDNAM/blob/main/pub/original_font.pdf); [Presentation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/pub/BridgeV2.pdf)
+
+* Beyond ITTA 2024
 1. Shape approximation allows an off-center ($y_c \neq 0$) ellipse
 2. Cross-section approximation has better handling on trailing edges in multiple-peak cases.
 
