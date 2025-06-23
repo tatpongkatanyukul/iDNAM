@@ -4,7 +4,7 @@
 
 # Papers
 
-* 2024: ITTA, Baku Azerbaijan
+* 2024 at ITTA, Baku Azerbaijan. [Paper](https://github.com/tatpongkatanyukul/iDNAM/blob/main/pub/original_font.pdf); [Presentation](https://github.com/tatpongkatanyukul/iDNAM/blob/main/pub/BridgeV2.pdf)
 
 ---
 # My strategy
